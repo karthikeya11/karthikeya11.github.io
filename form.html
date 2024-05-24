@@ -1,0 +1,58 @@
+<html>
+<title>Form</title>
+<body bgcolor="blanchedalmond">
+<center>
+<center><h1><u><b><i>Student Registration Form</i></b></u></h1></center>
+<form action="response.html" method="post">
+<label name="fname" for="fname">1.First Name:</label>
+<input type="text" id="fname" maxlength="20"><br><br>
+<label name="lname" for="lname">2.Last Name:</label>
+<input type="text" id="lname" maxlength="20"><br><br>
+<label name="gen" for="gen">3.Gender:</label><br>
+<input type="radio" name="gen" value="Male" id="gen">Male<br>
+<input type="radio" name="gen" value="Female" id="gen">Female<br><br>
+<label  for="dob">4.Date of Birth:</label>
+<input type="date" id="dob" name="dob"><br><br>
+<label for="country">5.Country:</label>
+<select id="country">
+	<option value="INDIA">INDIA</option>
+	<option value="USA">USA</option>
+	<option value="JAPAN">JAPAN</option>
+	<option value="MEXICO">MEXICO</option>
+	<option value="BRAZIL">BRAZIL</option>
+	<option value="ITALY">ITALY</option>
+	<option value="RUSSIA">RUSSIA</option>
+</select><br><br>
+<label for="addr">6.Address:</label><br>
+<textarea rows="4" cols="20" id="addr" name="addr"></textarea>
+<br><br>
+<label for="branc">7.Interested branch in:</label>
+<select id="branc">
+	<option value="CSE">CSE</option>
+	<option value="CSM">CSM</option>
+	<option value="CSN">CSN</option>
+	<option value="CSO">CSO</option>
+	<option value="ECE">ECE</option>
+	<option value="EEE">EEE</option>
+	<option value="EIE">EIE</option>
+	<option value="ECI">ECI</option>
+	<option value="CE">CE</option>
+	<option value="ME">ME</option>
+</select> <br><br>
+<label for="uname">8.Create your USER NAME:</label>
+<input type="text" id="uname" name="uname"> <br><br>
+<label for="passw">9.Create a strong PASSWORD:</label>
+<input type="password" id="passw" name="passw"><br><br>
+<label for="mob">10.Mobile Number:</label>
+<input type="text" id="mob" name="mob" maxlength="10"><br><br><br>
+<label for="file" name="filename">11.Upload your DIGITAL SIGNATURE:</label>
+<input type="file" id="file" name="filename"><br><br><br>
+<input type="checkbox" id="d" name="d">
+<label for="d" name="d">I have read and understood the terms and conditions and i shall
+abide by that. The details which are provided above are true as per best of my knowledge. </label>
+<br><br><br>
+<input type="submit">  <input type="reset">
+</form>
+</center>
+</body>
+</html>

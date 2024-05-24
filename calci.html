@@ -1,0 +1,86 @@
+<html>
+<head><title>Calculator</title>
+<style>
+h1
+{
+	background-color:#40CACC;
+	font-size:75px;
+	border-radius:80px;
+}
+input
+{
+	border-radius:100px;
+	height:30;
+	border-color:blue;
+}
+b u
+{
+	font-size:28px;
+}
+div
+{
+	font-size:50px;
+	color:green;
+}
+h2
+{
+	font-size:50px;
+}
+</style>
+</head>
+<body bgcolor="#FAB162">
+<center>
+<h1>Basic Calculator</h1><br>
+<form>
+<input type="text" placeholder="Enter FIRST Number"  id="first" name="first"><br><br><br>
+<input type="text" placeholder="Enter SECOND Number" id="seco" name="seco"><br><br><br>
+<b><u>Operations:-</u></b>
+<input type="button" onclick="ff()"  value="ADD"id="add" name="add">
+<input type="button" onclick="sf()"  value="SUB"id="sub" name="sub">
+<input type="button" onclick="tf()"  value="MUL"id="mul" name="mul">
+<input type="button" onclick="fof()" value="DIV"id="divis" name="Divis">
+<input type="button" onclick="fif()" value="MOD"id="modulo" name="Modulo">
+
+<label for="res"><h2><i>Result:</i></h2></label>
+<div  id="resul"></div>
+
+<br><br><br><br>
+
+<input style="border-color:blue;border-radius:10px;background-color:gray;font-size:24;color:gainsboro" type="reset" value="Clear Values">
+</form>
+</center>
+<script language="javascript">
+function ff()
+{
+	var n1=parseInt(document.getElementById("first").value);
+	var n2=parseInt(document.getElementById("seco").value);
+	document.getElementById("resul").innerHTML = n1+n2;
+}
+		
+function sf()
+{
+	var n1=parseInt(document.getElementById("first").value);
+	var n2=parseInt(document.getElementById("seco").value);
+	document.getElementById("resul").innerHTML = n1-n2;
+}
+function tf()
+{
+	var n1=parseInt(document.getElementById("first").value);
+	var n2=parseInt(document.getElementById("seco").value);
+	document.getElementById("resul").innerHTML = n1*n2;
+}
+function fof()
+{
+	var n1=parseInt(document.getElementById("first").value);
+	var n2=parseInt(document.getElementById("seco").value);
+	document.getElementById("resul").innerHTML = n1/n2;
+}
+function fif()
+{
+	var n1=parseInt(document.getElementById("first").value);
+	var n2=parseInt(document.getElementById("seco").value);
+	document.getElementById("resul").innerHTML = n1%n2;
+}
+</script>
+</body>
+</html>
